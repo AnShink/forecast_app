@@ -3,7 +3,7 @@
 2. Приложение выполненно на Vue3.
 3. Для получения данных о погоде в текущий момент используется открытое API.
 
-![text](/src/assets/img/forecast_app.png)
+![text](/weather-main/forecast_app.png)
 
 This template should help get you started developing with Vue 3 in Vite.
 
