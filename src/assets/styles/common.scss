@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: $white;
+}
+a {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+.container {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3%;
+}
+.section {
+  z-index: 2;
+  position: relative;
+}
+.block-bottom {
+  height: 100%;
+  margin-left: 0.625rem;
+  padding: 1.75rem 1rem 1rem;
+  background-color: $card-bcg;
+  background-size: cover;
+  border-radius: 1.5625rem;
+  &-inner {
+    display: flex;
+    align-items: center;
+  }
+  &-pic {
+    width: 15%;
+    height: 4.375rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+  }
+  &-texts {
+    width: 85%;
+    padding-left: 1.25rem;
+    .block-bottom-text-block:first-child {
+      padding-bottom: 0.75rem;
+    }
+    .block-bottom-text-block-title {
+      padding-bottom: 0.25rem;
+      font-size: 0.9375rem;
+      font-weight: 700;
+    }
+    .block-bottom-text-block-desc {
+      font-size: 0.8125rem;
+      color: rgba($white, 0.75);
+    }
+  }
+}
+.pic-humidity {
+  background-image: url("/src/assets/img/humidity.png");
+}
+.pic-coords {
+  background-image: url("/src/assets/img/compass.png");
+}
+@media (max-width: 575px) {
+  .block-bottom {
+    &-inner {
+      flex-direction: column;
+    }
+    &-bottom-texts {
+      width: 100%;
+      padding-top: 1rem;
+      padding-left: 0;
+    }
+    &-bottom-pic {
+      width: 30%;
+      margin-right: 0;
+    }
+  }
+}
+
